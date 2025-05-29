@@ -5,51 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive LaundryMart</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
       emailjs.init({
-        publicKey: "pJ_TO3mRjDsqZLx_l",
+        publicKey: "pJ_TO3mRjDsqZLx_l", // Replace with your actual EmailJS public key
       });
-   })();
-</script>
+    })();
+  </script>
 </head>
 
 <body>
-  <!-- mousehover -->
-   <!-- <div class="mouse" id="mouse"></div> -->
-  <!-- NAVBAR -->
   <nav>
     <p>LOGO</p>
     <ul class="nav-list">
-      <li class="nav-item"><a href="#home">Home</a> </li>
-      <li class="nav-item"><a href="#about">About</a> </li>
-      <li class="nav-item"><a href="#services">Services</a> </li>
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+      <li class="nav-item"><a href="#services">Services</a></li>
       <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
     <button id="username">Tushtee</button>
   </nav>
-  <!-- first main section -->
+
   <main>
-    <!-- left content -->
     <div class="left">
       <h1>Revitalize Your Clothes with Expert <span style="color: dodgerblue;">Laundry Services!</span></h1>
       <p>
-        From premium dry cleaning to swift wash and fold,we deliver care and
-        convenience.Schedule a pickup and rediscover the freshness of your
+        From premium dry cleaning to swift wash and fold, we deliver care and
+        convenience. Schedule a pickup and rediscover the freshness of your
         clothes today!
       </p>
       <button>Book a service today!</button>
     </div>
-    <!-- right image -->
     <div class="right">
-      <img src="Washing-machine.png" alt="image" />
+      <img src="Washing-machine.png" alt="Washing machine illustration" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/777?text=Washing+Machine';" />
     </div>
   </main>
-  <!-- Achievements section -->
+
   <section class="Achievements">
     <h1><b>Our Achievements</b></h1>
     <div>
@@ -65,44 +58,38 @@
       <p>Experience</p>
     </div>
   </section>
-  <!-- service section -->
+
   <section class="services">
-    <!-- left content -->
     <div class="service-content">
-      <!-- Heading -->
       <h1>Our Services</h1>
       <p>Click on the add to cart button to add to services to you cart</p>
       <hr>
-       <div class="service">
-            <ul class="service-list" id="service-list">
-              <li id="1">Dry cleaning  <span class="price">$200</span> <button class="add-item">Add item</button></li>
-              <li id="2">Wash and Fold <span class="price">$100</span> <button class="add-item">Add item</button></li>
-              <li id="3">Ironing  <span class="price">$30</span> <button class="add-item">Add item</button></li>
-              <li id="4">Stain removal <span class="price">$500</span> <button class="add-item">Add item</button></li>
-              <li id="5">Leather & suede cleaning <span class="price">$999</span> <button class="add-item">Add item</button></li>
-              <li id="6">Wedding dress cleaning <span class="price">$2800</span> <button class="add-item">Add item</button></li>
-            </ul>
-       </div>
-      
+      <div class="service">
+        <ul class="service-list" id="service-list">
+          <li id="1">Dry cleaning <span class="price">$200</span> <button class="add-item">Add item</button></li>
+          <li id="2">Wash and Fold <span class="price">$100</span> <button class="add-item">Add item</button></li>
+          <li id="3">Ironing <span class="price">$30</span> <button class="add-item">Add item</button></li>
+          <li id="4">Stain removal <span class="price">$500</span> <button class="add-item">Add item</button></li>
+          <li id="5">Leather & suede cleaning <span class="price">$999</span> <button class="add-item">Add item</button></li>
+          <li id="6">Wedding dress cleaning <span class="price">$2800</span> <button class="add-item">Add item</button></li>
+        </ul>
+      </div>
       <hr>
       <p id="warn"> <i class="fa-solid fa-circle-exclamation"></i> Add items to the cart and book now</p>
     </div>
-    <!-- right content -->
     <div id="carts">
       <div class="cart">
-          <h1>Added Items</h1>
-          <div class="header">S.No <span>Service name</span> <span>Price</span></div>
-          <div class="cart-list" id="cart-list">
-              
+        <h1>Added Items</h1>
+        <div class="header">S.No <span>Service name</span> <span>Price</span></div>
+        <div class="cart-list" id="cart-list">
           </div>
-           <div class="cart-total">Total: <span id="cart-total">$0.00</span> </div>
+        <div class="cart-total">Total: <span id="cart-total">$0.00</span></div>
       </div>
-      <!-- form table -->
-      <form action="" class="form">
+      <form class="form">
         <h3>Book Now</h3><br>
         <div>
-        <label for="name">Full Name</label><br>
-        <input type="text" id="name" placeholder="Tushtee" required><br>
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" placeholder="Tushtee" required><br>
         </div>
         <div>
           <label for="email-id">Email-ID</label><br>
@@ -110,19 +97,18 @@
         </div>
         <div>
           <label for="phone-no">Phone Number</label><br>
-          <input type="phone-no" id="phone-no" placeholder="9897112345" required>
+          <input type="tel" id="phone-no" placeholder="9897112345" required>
         </div>
         <button type="submit" class="book-now">Book Now</button>
-        <div id="mssg">Thankyou for shopping</div>
-      </form>
+        <div id="mssg" style="display:none; margin-top:10px; color:green;">Thank you for shopping!</div> </form>
     </div>
   </section>
-  <!-- features section -->
+
   <section>
     <div class="features">
       <div class="feature">
         <i class="fa-regular fa-star"></i>
-        <h1>premium service</h1>
+        <h1>Premium service</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia quis suscipit! Vero ratione
           distinctio molestiae nihil reprehenderit nulla sed consequuntur, tempora repellendus voluptatibus iusto.
           Excepturi recusandae dignissimos sed laborum?</p>
@@ -136,8 +122,7 @@
       </div>
       <div class="feature">
         <i class="fa-solid fa-truck"></i>
-        <h1>Hassle free delhivery</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus recusandae velit cupiditate alias
+        <h1>Hassle free delivery</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus recusandae velit cupiditate alias
           assumenda iusto nam perferendis culpa, corrupti ipsum, nostrum molestias voluptates tenetur sunt magnam! Eius
           totam sed temporibus.</p>
       </div>
@@ -149,7 +134,6 @@
         </p>
       </div>
     </div>
-    <!-- subscribing section -->
     <div class="subscribe">
       <div class="subs">
         <h1>Subscribe to our newsletter</h1>
@@ -160,9 +144,8 @@
         <button id="bttn">Subscribe</button>
       </div>
     </div>
-    </div>
-  </section>
-  <!-- footer -->
+    </section>
+
   <footer>
     <div>
       <h1>LOGO</h1>
@@ -188,13 +171,11 @@
     </div>
     <div>
       <h3>Follow us</h3>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i>
     </div>
   </footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
